@@ -2967,11 +2967,16 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
+		flex: 1;
 		background-attachment: scroll;
 		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: cover;
+		display: flex;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 100vh;
+		align-items: center; /* center vertically */
+  		justify-content: center; /* center horizontally */
 		overflow: hidden;
 		position: relative;
 	}
@@ -3131,11 +3136,13 @@ input, select, textarea {
 		.spotlight.left .content {
 			border-right-width: 0.35em;
 			left: 0;
+			width: 250px;
 		}
 
 		.spotlight.right .content {
 			border-left-width: 0.35em;
 			right: 0;
+			width: 250px;
 		}
 
 		.spotlight.style1 .content {
@@ -3450,7 +3457,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-color: #272833;
 		background-image: url("../../images/banner.jpg");
 		background-position: center center;
